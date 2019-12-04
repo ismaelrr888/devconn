@@ -1,0 +1,4 @@
+npm init
+npm i express mongoose passp
+ort passport-jwt jsonwebtoken body-parser bcryptjs validator
+npm i -D nodemon
