@@ -11,13 +11,13 @@ const Profile = require("../../models/Profile");
 // Validation
 const validatePostInput = require("../../validation/post");
 
-// @route GET api/posts/test
-// @desc Tests posts route
+// @route  GET api/posts/test
+// @desc   Tests posts route
 // @access Public
 router.get("/test", (req, res) => res.json({ msg: "Post Works" }));
 
-// @route GET api/posts
-// @desc Get post
+// @route  GET api/posts
+// @desc   Get post
 // @access Public
 router.get("/", (req, res) => {
   Post.find()
@@ -26,8 +26,8 @@ router.get("/", (req, res) => {
     .catch(err => res.status(404).json({ nopostsfound: "No posts found" }));
 });
 
-// @route GET api/posts/:id
-// @desc Get post by id
+// @route  GET api/posts/:id
+// @desc   Get post by id
 // @access Public
 router.get("/:id", (req, res) => {
   Post.findById(req.params.id)
@@ -37,8 +37,8 @@ router.get("/:id", (req, res) => {
     );
 });
 
-// @route POST api/posts
-// @desc Create post
+// @route  POST api/posts
+// @desc   Create post
 // @access Private
 router.post(
   "/",
@@ -62,8 +62,8 @@ router.post(
   }
 );
 
-// @route DELETE api/posts/:id
-// @desc Delete post
+// @route  DELETE api/posts/:id
+// @desc   Delete post
 // @access Private
 router.delete(
   "/:id",
@@ -87,8 +87,8 @@ router.delete(
   }
 );
 
-// @route POST api/posts/like/:id
-// @desc Like post
+// @route  POST api/posts/like/:id
+// @desc   Like post
 // @access Private
 router.post(
   "/like/:id",
@@ -118,8 +118,8 @@ router.post(
   }
 );
 
-// @route POST api/posts/unlike/:id
-// @desc Unlike post
+// @route  POST api/posts/unlike/:id
+// @desc   Unlike post
 // @access Private
 router.post(
   "/unlike/:id",
