@@ -2,3 +2,14 @@ npm init
 npm i express mongoose passp
 ort passport-jwt jsonwebtoken body-parser bcryptjs validator
 npm i -D nodemon
+
+#Run ui + api in a only task
+npm i concurrently
+
+
+#Install
+npm i -g create-react-app
+#Update npm
+npm i -g npm
+#Create app in folder
+create-react-app client
