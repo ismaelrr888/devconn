@@ -14,3 +14,5 @@ npm i -g npm
 #Create app in folder
 create-react-app client
 npm i react-router-dom
+npm i axios
+npm i classnames
